@@ -1,0 +1,56 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.log
+.idea/
+logs/
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+# Created by .gitignore support plugin (hsz.mobi)
+### Java flex
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.idea
+*.iml
+target/
+
+.project
+.classpath
+.DS_Store
+.settings
+.log
+
+
+# properties ignore
