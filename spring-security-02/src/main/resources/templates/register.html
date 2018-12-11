@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+</head>
+<body>
+<div class="panel-body">
+    <h1>注册页面</h1>
+    <form th:action="@{/register}" method="post">
+        <div>
+            账号: <input type="text" name="userName" id="username" placeholder="账号">
+        </div>
+        <div>
+            密码: <input type="password" class="form-control" name="password" id="password" placeholder="密码">
+        </div>
+        <br>
+        <div th:if="${param.error}">
+            <p>注册失败，账号已存在！</p>
+        </div>
+        <div th:if="${param.success}">
+            <p>注册成功，可以登录了！</p>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary btn-block">注册</button>
+            <a href="/login">返回登录页面</a>
+        </div>
+    </form>
+</div>
+
+</body>
+
+</html>
