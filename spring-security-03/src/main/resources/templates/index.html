@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+    <title>Spring Security 登录认证记住我实例</title>
+</head>
+<body>
+<div class="container">
+    <h1>Spring Security 登录认证记住我实例</h1>
+
+    <div class="container">
+        <p>
+            <span sec:authorize="isAuthenticated()">
+                    | 登录用户: <span sec:authentication="name"></span> |
+                    角色: <span sec:authentication="principal.authorities"></span> |
+                    <a th:href="@{/logout}">退出登录</a>
+                </span>
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
