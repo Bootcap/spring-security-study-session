@@ -10,6 +10,7 @@
     <module>spring-security-02</module>
     <module>spring-security-03</module>
     <module>spring-security-04</module>
+    <module>spring-security-05</module>
   </modules>
   <groupId>com.bootcap.session.security</groupId>
   <artifactId>spring-security-study-session</artifactId>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<h1>登录页面</h1>
+<div th:if="${param.error}">
+    用户名或密码不正确
+</div>
+<div th:if="${param.logout}">
+    你已经退出登录
+</div>
+<form th:action="@{/login}" method="post">
+    <div><label> 用户名: <input type="text" name="username"/> </label></div>
+    <div><label> 密&nbsp;&nbsp;&nbsp;码: <input type="password" name="password"/> </label></div>
+    <br/>
+    <div>
+        <input type="submit" value="登录"/>
+        <br/>
+        <a  href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101364240&redirect_uri=http://127.0.0.1/login/qq&state=test"><img style="padding-top: 5px" src="/static/imgs/qqLogin.png" /></a>
+    </div>
+</form>
+</body>
+</html>

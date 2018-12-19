@@ -6,4 +6,6 @@ spring-security-02：[Spring Security 入门教程（二） - 基于数据库信
 
 spring-security-03：[Spring Security 入门教程（三） - 基于登录认证记住我实例](https://www.jianshu.com/p/3609e7517edb)
 
-spring-security-03：[Spring Security 入门教程（四） - 权限动态修改](https://www.jianshu.com/p/d540fcbe3a81)
+spring-security-04：[Spring Security 入门教程（四） - 权限动态修改](https://www.jianshu.com/p/d540fcbe3a81)
+
+spring-security-05：[Spring Security (五) - 实现QQ授权登录](https://www.jianshu.com/p/d37b634428ba)
